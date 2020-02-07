@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/SynZhang/koolkit/issues"
   },
-  "homepage": "https://github.com/SynZhang/koolkit#readme"
+  "homepage": "https://github.com/SynZhang/koolkit#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "1.19.1"
+  },
+  "lint-staged": {
+    "*.{ts,js,css,md}": "prettier --write"
+  },
+  "prettier": {
+    "semi": false
+  }
 }
