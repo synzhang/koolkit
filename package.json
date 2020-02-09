@@ -22,11 +22,16 @@
     }
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "typescript": "^3.7.5"
   },
   "lint-staged": {
+    "*.{ts,js}": "eslint --fix",
     "*.{ts,js,css,md}": "prettier --write"
   },
   "prettier": {
