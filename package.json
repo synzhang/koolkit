@@ -20,7 +20,7 @@
   "homepage": "https://github.com/SynZhang/koolkit#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
   "devDependencies": {
