@@ -1,4 +1,5 @@
 const path = require("path")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 const config = {
   mode: "production",
@@ -14,7 +15,8 @@ const config = {
   },
   module: {
     rules: [{ test: /\.tsx?$/, use: ["ts-loader"], exclude: /node_modules/ }]
-  }
+  },
+  plugins: [new CleanWebpackPlugin()]
 }
 
 module.exports = config
