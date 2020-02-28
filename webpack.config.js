@@ -5,7 +5,9 @@ const config = {
   entry: "./src/index.ts",
   output: {
     filename: "index.js",
-    path: path.resolve(__dirname, "/build")
+    path: path.resolve(__dirname, "build"),
+    library: "koolkit",
+    libraryTarget: "umd"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
