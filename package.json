@@ -4,9 +4,10 @@
   "description": "",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,17 +21,21 @@
   "homepage": "https://github.com/SynZhang/koolkit#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
+    "clean-webpack-plugin": "^3.0.0",
     "eslint": "^6.8.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
     "prettier": "1.19.1",
-    "typescript": "^3.7.5"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --fix",
