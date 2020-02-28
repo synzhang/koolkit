@@ -4,6 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --config webpack.config.js"
