@@ -16,7 +16,8 @@ const config = {
   module: {
     rules: [{ test: /\.tsx?$/, use: ["ts-loader"], exclude: /node_modules/ }]
   },
-  plugins: [new CleanWebpackPlugin()]
+  plugins: [new CleanWebpackPlugin()],
+  devtool: "inline-source-map"
 }
 
 module.exports = config
