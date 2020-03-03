@@ -5,6 +5,6 @@
  *
  * @link https://davidwalsh.name/waitfortime
  */
-export default function waitForTime(ms: number): Promise<{}> {
+export default function waitForTime(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }

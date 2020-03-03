@@ -7,6 +7,6 @@
  * @link https://davidwalsh.name/javascript-wait
  */
 
-export default function waitForever(): Promise<{}> {
+export default function waitForever(): Promise<void> {
   return new Promise(() => {})
 }
