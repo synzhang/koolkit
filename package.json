@@ -8,6 +8,7 @@
   "scripts": {
     "test": "jest",
     "doc": "typedoc",
+    "release": "standard-version --tag-prefix=",
     "start": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -38,6 +39,7 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.0.7",
     "prettier": "1.19.1",
+    "standard-version": "^7.1.0",
     "ts-loader": "^6.2.1",
     "typedoc": "^0.16.11",
     "typescript": "^3.7.5",
