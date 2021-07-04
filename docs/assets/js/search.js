@@ -1,22 +1,22 @@
 var typedoc = typedoc || {}
 typedoc.search = typedoc.search || {}
 typedoc.search.data = {
-  kinds: { "1": "External module", "64": "Function", "16777216": "Reference" },
+  kinds: { "1": "External module", "64": "Function" },
   rows: [
     {
       id: 0,
       kind: 1,
-      name: '"waitForever"',
-      url: "modules/_waitforever_.html",
+      name: '"partition"',
+      url: "modules/_partition_.html",
       classes: "tsd-kind-external-module"
     },
     {
       id: 1,
       kind: 64,
-      name: "waitForever",
-      url: "modules/_waitforever_.html#waitforever",
+      name: "partition",
+      url: "modules/_partition_.html#partition",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: '"waitForever"'
+      parent: '"partition"'
     },
     {
       id: 2,
@@ -36,25 +36,17 @@ typedoc.search.data = {
     {
       id: 4,
       kind: 1,
-      name: '"index"',
-      url: "modules/_index_.html",
+      name: '"waitForever"',
+      url: "modules/_waitforever_.html",
       classes: "tsd-kind-external-module"
     },
     {
       id: 5,
-      kind: 16777216,
+      kind: 64,
       name: "waitForever",
-      url: "modules/_index_.html#waitforever",
-      classes: "tsd-kind-reference tsd-parent-kind-external-module",
-      parent: '"index"'
-    },
-    {
-      id: 6,
-      kind: 16777216,
-      name: "waitForTime",
-      url: "modules/_index_.html#waitfortime",
-      classes: "tsd-kind-reference tsd-parent-kind-external-module",
-      parent: '"index"'
+      url: "modules/_waitforever_.html#waitforever",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: '"waitForever"'
     }
   ]
 }
