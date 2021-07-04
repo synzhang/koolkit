@@ -7,7 +7,7 @@
   "sideEffects": false,
   "scripts": {
     "test": "jest",
-    "doc": "typedoc",
+    "doc": "typedoc --exclude ./src/index.ts",
     "release": "standard-version --tag-prefix=",
     "start": "webpack --config webpack.config.js"
   },
