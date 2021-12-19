@@ -66,6 +66,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#partition" class="tsd-kind-icon">partition</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#pipe" class="tsd-kind-icon">pipe</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#poll" class="tsd-kind-icon">poll</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#waitfortime" class="tsd-kind-icon">wait<wbr>For<wbr>Time</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#waitforever" class="tsd-kind-icon">wait<wbr>Forever</a></li>
 							</ul>
@@ -85,7 +86,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/cd70ef7/src/partition.ts#L7">partition.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/653c452/src/partition.ts#L7">partition.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/cd70ef7/src/pipe.ts#L9">pipe.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/653c452/src/pipe.ts#L9">pipe.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,6 +176,55 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="poll" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> poll</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">poll<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/653c452/src/poll.ts#L18">poll.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The polling function.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>link</dt>
+									<dd><p><a href="https://1loc.dev/function/compose-functions-from-left-to-right">https://1loc.dev/function/compose-functions-from-left-to-right</a></p>
+									</dd>
+									<dt>usage</dt>
+									<dd><p> poll(function() {
+											return document.getElementById(&#39;lightbox&#39;).offsetWidth &gt; 0;
+											}, 2000, 150).then(function() {
+											// Polling done, now do something else!
+											}).catch(function() {
+											// Polling timed out, handle the error!
+										});</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>timeout: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>interval: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A Promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="waitfortime" class="tsd-anchor"></a>
 					<h3>wait<wbr>For<wbr>Time</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -184,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/cd70ef7/src/waitForTime.ts#L8">waitForTime.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/653c452/src/waitForTime.ts#L8">waitForTime.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/cd70ef7/src/waitForever.ts#L10">waitForever.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/653c452/src/waitForever.ts#L10">waitForever.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,6 +304,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#pipe" class="tsd-kind-icon">pipe</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#poll" class="tsd-kind-icon">poll</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#waitfortime" class="tsd-kind-icon">wait<wbr>For<wbr>Time</a>
