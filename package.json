@@ -8,8 +8,16 @@
   "scripts": {
     "test": "jest",
     "doc": "typedoc",
-    "release": "standard-version --tag-prefix=",
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js",
+    "release": "standard-version",
+    "postrelease": "git push && git push --tags --no-verify",
+    "version-tag:major": "npm run release -- --release-as major",
+    "version-tag:minor": "npm run release -- --release-as minor",
+    "version-tag:patch": "npm run release -- --release-as patch",
+    "version-tag:premajor": "npm run version-tag:major -- --prerelease",
+    "version-tag:preminor": "npm run version-tag:minor -- --prerelease",
+    "version-tag:prepatch": "npm run version-tag:patch -- --prerelease",
+    "version-tag:prerelease": "npm run release -- --prerelease"
   },
   "repository": {
     "type": "git",
