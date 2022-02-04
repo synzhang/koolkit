@@ -2,7 +2,7 @@
   "name": "koolkit",
   "version": "0.0.6",
   "description": "",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "typings": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
