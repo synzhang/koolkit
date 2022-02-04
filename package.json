@@ -10,14 +10,14 @@
     "doc": "typedoc",
     "start": "webpack --config webpack.config.js",
     "release": "standard-version",
-    "postrelease": "git push && git push --tags --no-verify",
-    "version-tag:major": "npm run release -- --release-as major",
-    "version-tag:minor": "npm run release -- --release-as minor",
-    "version-tag:patch": "npm run release -- --release-as patch",
-    "version-tag:premajor": "npm run version-tag:major -- --prerelease",
-    "version-tag:preminor": "npm run version-tag:minor -- --prerelease",
-    "version-tag:prepatch": "npm run version-tag:patch -- --prerelease",
-    "version-tag:prerelease": "npm run release -- --prerelease"
+    "prerelease": "npm run release -- --prerelease",
+    "release:major": "npm run release -- --release-as major",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:premajor": "npm run release:major -- --prerelease",
+    "release:preminor": "npm run release:minor -- --prerelease",
+    "release:prepatch": "npm run release:patch -- --prerelease",
+    "postrelease": "git push && git push --tags --no-verify"
   },
   "repository": {
     "type": "git",
