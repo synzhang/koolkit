@@ -1,7 +1,0 @@
-export { default as waitForever } from "./waitForever.ts"
-export { default as waitForTime } from "./waitForTime.ts"
-export { default as partition } from "./partition.ts"
-export { default as poll } from "./poll.ts"
-export { default as pipe } from "./pipe.ts"
-export { default as descartes } from "./descartes.ts"
-export { default as generatePrimeNumbers } from "./generatePrimeNumbers.ts"
