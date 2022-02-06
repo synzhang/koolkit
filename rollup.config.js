@@ -1,11 +1,38 @@
 import typescript from "@rollup/plugin-typescript"
+import pkg from "./package.json"
 
-export default {
-  input: "src/index.ts",
-  output: {
-    dir: "build",
-    format: "es",
-    sourcemap: "inline"
+const author = pkg.author
+const moduleName = pkg.name.replace(/^@.*\//, "")
+const inputFileName = "src/index.ts"
+const banner = `
+  /**
+   * @license
+   * author: ${author}
+   * ${moduleName}.js v${pkg.version}
+   * Released under the ${pkg.license} license.
+   */
+`
+
+export default [
+  {
+    input: inputFileName,
+    output: {
+      banner,
+      file: pkg.main,
+      format: "umd",
+      name: pkg.name,
+      sourcemap: "inline"
+    },
+    plugins: [typescript()]
   },
-  plugins: [typescript()]
-}
+  {
+    input: inputFileName,
+    output: {
+      banner,
+      file: pkg.module,
+      format: "es",
+      sourcemap: "inline"
+    },
+    plugins: [typescript()]
+  }
+]
