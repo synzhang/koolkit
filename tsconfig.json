@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "build",
     "lib": ["DOM", "ES2018"],
     "baseUrl": "./src",
     "declaration": true,
+    "declarationDir": ".",
     "sourceMap": true,
   },
   "include": [
     "src/**/*",
-  ]
+  ],
+  "exclude": ["build"]
 }
