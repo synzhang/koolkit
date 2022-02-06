@@ -12,7 +12,7 @@
     "start": "webpack --config webpack.config.js",
     "build": "rollup -c",
     "release": "standard-version",
-    "prerelease": "npm run release -- --prerelease",
+    "release:pre": "npm run release -- --prerelease",
     "release:major": "npm run release -- --release-as major",
     "release:minor": "npm run release -- --release-as minor",
     "release:patch": "npm run release -- --release-as patch",
