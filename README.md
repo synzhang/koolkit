@@ -1,6 +1,6 @@
 # Koolkit
 
-![npm](https://img.shields.io/npm/v/koolkit)
+[![Node.js Package](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml/badge.svg)](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml)
 
 A curated list of javascript utilities.
 
