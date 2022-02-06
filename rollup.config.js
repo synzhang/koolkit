@@ -23,7 +23,11 @@ export default [
       name: pkg.name,
       sourcemap: "inline"
     },
-    plugins: [typescript()]
+    plugins: [
+      typescript({
+        tsconfig: "./tsconfig.json"
+      })
+    ]
   },
   {
     input: inputFileName,
