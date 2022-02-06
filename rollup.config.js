@@ -33,6 +33,10 @@ export default [
       format: "es",
       sourcemap: "inline"
     },
-    plugins: [typescript()]
+    plugins: [
+      typescript({
+        tsconfig: "./tsconfig.json"
+      })
+    ]
   }
 ]
