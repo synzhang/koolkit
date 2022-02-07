@@ -1,3 +1,4 @@
+import { terser } from "rollup-plugin-terser"
 import typescript from "@rollup/plugin-typescript"
 import pkg from "./package.json"
 
@@ -16,13 +17,23 @@ const banner = `
 export default [
   {
     input: inputFileName,
-    output: {
-      banner,
-      file: pkg.main,
-      format: "umd",
-      name: pkg.name,
-      sourcemap: "inline"
-    },
+    output: [
+      {
+        banner,
+        file: pkg.main,
+        format: "umd",
+        name: pkg.name,
+        sourcemap: "inline"
+      },
+      {
+        banner,
+        file: `${pkg.main}.min.js`,
+        format: "umd",
+        name: pkg.name,
+        sourcemap: "inline",
+        plugins: [terser()]
+      }
+    ],
     plugins: [
       typescript({
         tsconfig: "./tsconfig.json"
