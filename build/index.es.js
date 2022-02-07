@@ -2,7 +2,7 @@
   /**
    * @license
    * author: Syn Zhang<zeyanzhang.china@gmail.com>
-   * koolkit.js v0.0.6
+   * koolkit.js v0.0.8
    * Released under the MIT license.
    */
 
