@@ -37,6 +37,11 @@
     "url": "https://github.com/SynZhang/koolkit/issues"
   },
   "homepage": "https://github.com/SynZhang/koolkit#readme",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "utility"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged --allow-empty"
