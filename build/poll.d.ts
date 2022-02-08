@@ -14,5 +14,5 @@
  *      // Polling timed out, handle the error!
  *  });
  */
-declare const poll: (fn: any, timeout: any, interval: any) => Promise<unknown>;
+declare const poll: (fn: any, timeout: number, interval: number) => Promise<unknown>;
 export default poll;

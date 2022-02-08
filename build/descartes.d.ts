@@ -3,5 +3,5 @@
  *
  * @returns Array.
  */
-declare const descartes: (array?: any[]) => any;
+declare const descartes: (array?: any[]) => number[];
 export default descartes;
