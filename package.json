@@ -6,6 +6,12 @@
   "module": "build/index.es.js",
   "browser": "build/index.js",
   "typings": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/index.cjs.js",
+      "import": "./build/index.es.js"
+    }
+  },
   "sideEffects": false,
   "scripts": {
     "test": "jest",
