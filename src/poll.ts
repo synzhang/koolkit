@@ -15,7 +15,7 @@
  *  });
  */
 
-const poll = (fn, timeout, interval) => {
+const poll = (fn, timeout: number, interval: number) => {
   var endTime = Number(new Date()) + (timeout || 2000)
   interval = interval || 100
 
