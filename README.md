@@ -9,7 +9,7 @@ A curated list of javascript utilities.
 ### In a browser
 
 ```html
-<script src="koolkit.js"></script>
+<script src="koolkit.min.js"></script>
 ```
 
 ### Using npm

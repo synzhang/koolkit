@@ -20,15 +20,15 @@ export default [
     output: [
       {
         banner,
-        file: pkg.main,
-        format: "umd",
+        file: pkg.browser,
+        format: "iife",
         name: pkg.name,
         sourcemap: "inline"
       },
       {
         banner,
-        file: `${pkg.main}.min.js`,
-        format: "umd",
+        file: `${pkg.browser}.min.js`,
+        format: "iife",
         name: pkg.name,
         sourcemap: "inline",
         plugins: [terser()]
@@ -46,6 +46,20 @@ export default [
       banner,
       file: pkg.module,
       format: "es",
+      sourcemap: "inline"
+    },
+    plugins: [
+      typescript({
+        tsconfig: "./tsconfig.json"
+      })
+    ]
+  },
+  {
+    input: inputFileName,
+    output: {
+      banner,
+      file: pkg.main,
+      format: "cjs",
       sourcemap: "inline"
     },
     plugins: [

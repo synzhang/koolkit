@@ -2,8 +2,9 @@
   "name": "koolkit",
   "version": "0.0.8",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/index.cjs.js",
   "module": "build/index.es.js",
+  "browser": "build/index.js",
   "typings": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
