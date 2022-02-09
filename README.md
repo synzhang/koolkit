@@ -4,6 +4,10 @@
 
 A curated list of javascript utilities.
 
+- Work in browser & Node.js
+- Support Tree Shaking
+- Support TypeScript
+
 ## Installation
 
 ### In a browser
@@ -17,3 +21,19 @@ A curated list of javascript utilities.
 ```sh
 npm i koolkit
 ```
+
+#### ES Module
+
+```js
+import { pipe } from "koolkit"
+```
+
+#### CommonJS
+
+```js
+const { pipe } = require("koolkit")
+```
+
+## License
+
+[MIT](./LICENSE)
