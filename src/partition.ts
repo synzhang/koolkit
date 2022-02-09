@@ -7,7 +7,7 @@
 const partition = f => array =>
   array.reduce(
     (result, item) => {
-      switch (f(array)) {
+      switch (f(item)) {
         case false:
           result[0].push(item)
           return result
