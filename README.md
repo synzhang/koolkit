@@ -1,4 +1,4 @@
-# Koolkit
+# [Koolkit](https://synzhang.github.io/koolkit)
 
 [![Node.js Package](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml/badge.svg)](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml)
 
@@ -33,6 +33,10 @@ import { pipe } from "koolkit"
 ```js
 const { pipe } = require("koolkit")
 ```
+
+## Documentation
+
+You can find the documentation [on the website](https://synzhang.github.io/koolkit).
 
 ## License
 
