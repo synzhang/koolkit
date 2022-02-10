@@ -1,5 +1,6 @@
 # [Koolkit](https://synzhang.github.io/koolkit)
 
+[![CI](https://github.com/SynZhang/koolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/SynZhang/koolkit/actions/workflows/ci.yml)
 [![Node.js Package](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml/badge.svg)](https://github.com/SynZhang/koolkit/actions/workflows/npmpublish.yml)
 
 A curated list of javascript utilities.
