@@ -5,7 +5,8 @@
  *
  * @link https://1loc.dev/function/compose-functions-from-left-to-right
  *
- * @usage
+ * @example
+ * ```
  *  poll(function() {
  *    return document.getElementById('lightbox').offsetWidth > 0;
  *  }, 2000, 150).then(function() {
@@ -13,6 +14,11 @@
  *  }).catch(function() {
  *      // Polling timed out, handle the error!
  *  });
+ * ```
  */
-declare const poll: (fn: any, timeout: number, interval: number) => Promise<unknown>;
-export default poll;
+declare const poll: (
+  fn: any,
+  timeout: number,
+  interval: number
+) => Promise<unknown>
+export default poll
