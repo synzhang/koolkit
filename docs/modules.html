@@ -65,7 +65,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#descartes" class="tsd-kind-icon">descartes</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#encodeurl" class="tsd-kind-icon">encodeURL</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#generateprimenumbers" class="tsd-kind-icon">generate<wbr>Prime<wbr>Numbers</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#geturlparams" class="tsd-kind-icon">getURLParams</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#partition" class="tsd-kind-icon">partition</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#pipe" class="tsd-kind-icon">pipe</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#poll" class="tsd-kind-icon">poll</a></li>
@@ -88,7 +90,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/descartes.ts#L7">descartes.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/descartes.ts#L7">descartes.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -108,6 +110,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="encodeurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> encodeURL</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">encodeURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/encodeURL.ts#L10">encodeURL.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Encode a URL.
+									<code>encodeURIComponent</code> doesn&#39;t encode -_.!~*&#39;()</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>link</dt>
+									<dd><p><a href="https://1loc.dev/misc/encode-a-url/">https://1loc.dev/misc/encode-a-url/</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>An URL.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="generateprimenumbers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>Prime<wbr>Numbers</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -117,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/generatePrimeNumbers.ts#L9">generatePrimeNumbers.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/generatePrimeNumbers.ts#L9">generatePrimeNumbers.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -142,6 +179,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="geturlparams" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> getURLParams</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">getURLParams<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/getURLParams.ts#L9">getURLParams.ts:9</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert URL parameters to object.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>link</dt>
+									<dd><p><a href="https://1loc.dev/misc/convert-url-parameters-to-object/">https://1loc.dev/misc/convert-url-parameters-to-object/</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An URL parameters object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="partition" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> partition</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -151,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/partition.ts#L7">partition.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/partition.ts#L7">partition.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,7 +269,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/pipe.ts#L9">pipe.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/pipe.ts#L9">pipe.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/poll.ts#L20">poll.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/poll.ts#L20">poll.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/waitForTime.ts#L8">waitForTime.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/waitForTime.ts#L8">waitForTime.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -334,7 +405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/dc08485/src/waitForever.ts#L10">waitForever.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/SynZhang/koolkit/blob/4df1f90/src/waitForever.ts#L10">waitForever.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -369,7 +440,13 @@
 						<a href="modules.html#descartes" class="tsd-kind-icon">descartes</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#encodeurl" class="tsd-kind-icon">encodeURL</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#generateprimenumbers" class="tsd-kind-icon">generate<wbr>Prime<wbr>Numbers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#geturlparams" class="tsd-kind-icon">getURLParams</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#partition" class="tsd-kind-icon">partition</a>

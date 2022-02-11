@@ -49,30 +49,50 @@ window.searchData = {
       name: "generatePrimeNumbers",
       url: "modules.html#generateprimenumbers",
       classes: "tsd-kind-function"
+    },
+    {
+      id: 7,
+      kind: 64,
+      name: "encodeURL",
+      url: "modules.html#encodeurl",
+      classes: "tsd-kind-function"
+    },
+    {
+      id: 8,
+      kind: 64,
+      name: "getURLParams",
+      url: "modules.html#geturlparams",
+      classes: "tsd-kind-function"
     }
   ],
   index: {
     version: "2.3.9",
     fields: ["name", "parent"],
     fieldVectors: [
-      ["name/0", [0, 16.74]],
+      ["name/0", [0, 18.971]],
       ["parent/0", []],
-      ["name/1", [1, 16.74]],
+      ["name/1", [1, 18.971]],
       ["parent/1", []],
-      ["name/2", [2, 16.74]],
+      ["name/2", [2, 18.971]],
       ["parent/2", []],
-      ["name/3", [3, 16.74]],
+      ["name/3", [3, 18.971]],
       ["parent/3", []],
-      ["name/4", [4, 16.74]],
+      ["name/4", [4, 18.971]],
       ["parent/4", []],
-      ["name/5", [5, 16.74]],
+      ["name/5", [5, 18.971]],
       ["parent/5", []],
-      ["name/6", [6, 16.74]],
-      ["parent/6", []]
+      ["name/6", [6, 18.971]],
+      ["parent/6", []],
+      ["name/7", [7, 18.971]],
+      ["parent/7", []],
+      ["name/8", [8, 18.971]],
+      ["parent/8", []]
     ],
     invertedIndex: [
       ["descartes", { _index: 5, name: { "5": {} }, parent: {} }],
+      ["encodeurl", { _index: 7, name: { "7": {} }, parent: {} }],
       ["generateprimenumbers", { _index: 6, name: { "6": {} }, parent: {} }],
+      ["geturlparams", { _index: 8, name: { "8": {} }, parent: {} }],
       ["partition", { _index: 2, name: { "2": {} }, parent: {} }],
       ["pipe", { _index: 4, name: { "4": {} }, parent: {} }],
       ["poll", { _index: 3, name: { "3": {} }, parent: {} }],
