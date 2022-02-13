@@ -3,8 +3,6 @@
  *
  * @returns A Promise.
  *
- * @link https://1loc.dev/function/compose-functions-from-left-to-right
- *
  * @example
  * ```
  *  poll(function() {
