@@ -1,10 +1,11 @@
 /**
  * The polling function.
  *
- * @returns A Promise.
- *
- * @link https://1loc.dev/function/compose-functions-from-left-to-right
- *
+ * @param fn The function to poll.
+ * @param timeout The timeout in milliseconds.
+ * @param interval The interval in milliseconds.
+ * @returns A promise that resolves when the condition is met.
+ * @link https://davidwalsh.name/javascript-polling
  * @example
  * ```
  *  poll(function() {
@@ -18,7 +19,7 @@
  */
 declare const poll: (
   fn: any,
-  timeout: number,
-  interval: number
+  timeout?: number,
+  interval?: number
 ) => Promise<unknown>
 export default poll
