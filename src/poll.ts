@@ -1,8 +1,11 @@
 /**
  * The polling function.
  *
- * @returns A Promise.
- *
+ * @param fn The function to poll.
+ * @param timeout The timeout in milliseconds.
+ * @param interval The interval in milliseconds.
+ * @returns A promise that resolves when the condition is met.
+ * @link https://davidwalsh.name/javascript-polling
  * @example
  * ```
  *  poll(function() {
@@ -15,11 +18,9 @@
  * ```
  */
 
-const poll = (fn, timeout: number, interval: number) => {
-  var endTime = Number(new Date()) + (timeout || 2000)
-  interval = interval || 100
-
-  var checkCondition = function(resolve, reject) {
+const poll = (fn, timeout: number = 2000, interval: number = 100) => {
+  const endTime = Number(new Date()) + (timeout || 2000)
+  const checkCondition = function(resolve, reject) {
     // If the condition is met, we're done!
     var result = fn()
     if (result) {

@@ -1,9 +1,9 @@
 /**
  * Ensure a given function can only be called once.
  *
- * @param fn
- * @param context
- * @returns
+ * @param fn The function to call only once.
+ * @param context The context to call the function in.
+ * @link https://davidwalsh.name/javascript-once
  * @example
  * ```ts
  * const canOnlyFireOnce = once(() => {
