@@ -17,7 +17,7 @@
 const once = (fn, context?) => {
   let result
 
-  return (...args) => {
+  return function(...args) {
     if (fn) {
       result = fn.apply(context || this, args)
       fn = null
