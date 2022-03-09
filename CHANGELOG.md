@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/SynZhang/koolkit/compare/v0.1.0...v0.2.0) (2022-03-09)
+
+### Features
+
+- create arrayMove ([5625390](https://github.com/SynZhang/koolkit/commit/562539063fdc751717d739cebab639d2b018f0e6))
+- create asyncSequentializer ([501e880](https://github.com/SynZhang/koolkit/commit/501e880d8551124113474da8017f06662db8831c))
+- create dataURIToBlob ([3254304](https://github.com/SynZhang/koolkit/commit/3254304f0788410161559a43ccfd9c212697051c))
+- create easing functions ([0eba77f](https://github.com/SynZhang/koolkit/commit/0eba77fca91a244fd2171c7b7772187336f67a24))
+- create getIn ([7052e10](https://github.com/SynZhang/koolkit/commit/7052e10b3ac63edd5943ad5d83dcc3113c9a34bd))
+- create getTypeOf ([1788b63](https://github.com/SynZhang/koolkit/commit/1788b63f35bec2d1dcdae7315a4c62fe056915a7))
+- create groupBy ([5f672d2](https://github.com/SynZhang/koolkit/commit/5f672d273698652d2fb5ff5795cb4e635004f896))
+- create lazyGet ([85f7c8a](https://github.com/SynZhang/koolkit/commit/85f7c8a1f05bb22bbb60f22e3c6cc445c1d90504))
+- create once ([f668ffa](https://github.com/SynZhang/koolkit/commit/f668ffad967e2cd71099961e8689a18a30bbd87b))
+- create supportWebP ([1f27178](https://github.com/SynZhang/koolkit/commit/1f2717888cfd801bafc6330ae2758a1b579df2d3))
+- create until ([17555b9](https://github.com/SynZhang/koolkit/commit/17555b9741ca02c1b61bcd26909dc58df3551b65))
+
+### Bug Fixes
+
+- export lazyGet, supportWebP, easings ([8ff7668](https://github.com/SynZhang/koolkit/commit/8ff7668e3e2ac944bfd6cb788eb236559f7e4238))
+- export modules ([a3f050e](https://github.com/SynZhang/koolkit/commit/a3f050e941826bdea3582885c845869903744dfa))
+- fix this context in once ([5139b6f](https://github.com/SynZhang/koolkit/commit/5139b6f9634c33f2bdfccd02bee3debbefcb8b1f))
+
 ## [0.1.0](https://github.com/SynZhang/koolkit/compare/v0.0.9...v0.1.0) (2022-02-11)
 
 ### Features
