@@ -40,3 +40,25 @@ export const easeInOutElastic = (t: number): number =>
   (t -= 0.5) < 0
     ? (0.02 + 0.01 / t) * Math.sin(50 * t)
     : (0.02 - 0.01 / t) * Math.sin(50 * t) + 1
+
+export default {
+  linear,
+  easeInQuad,
+  easeOutQuad,
+  easeInOutQuad,
+  easeInCubic,
+  easeOutCubic,
+  easeInOutCubic,
+  easeInQuart,
+  easeOutQuart,
+  easeInOutQuart,
+  easeInQuint,
+  easeOutQuint,
+  easeInOutQuint,
+  easeInSine,
+  easeOutSine,
+  easeInOutSine,
+  easeInElastic,
+  easeOutElastic,
+  easeInOutElastic
+}
