@@ -25,7 +25,8 @@
     "release:premajor": "npm run release:major -- --prerelease",
     "release:preminor": "npm run release:minor -- --prerelease",
     "release:prepatch": "npm run release:patch -- --prerelease",
-    "postrelease": "git push && git push --tags --no-verify"
+    "postrelease": "git push && git push --tags --no-verify",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -48,26 +49,26 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "7.17.2",
-    "@babel/preset-env": "7.16.11",
-    "@babel/preset-typescript": "7.16.7",
-    "@rollup/plugin-typescript": "8.3.0",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-typescript": "^8.3.1",
     "@types/jest": "27.4.0",
-    "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0",
-    "babel-jest": "25.5.1",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.1",
-    "jest": "^25.1.0",
-    "lint-staged": "^10.0.7",
-    "prettier": "1.19.1",
-    "rollup": "2.67.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.11.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1",
+    "rollup": "^2.70.0",
     "rollup-plugin-terser": "7.0.2",
-    "standard-version": "^8.0.1",
+    "standard-version": "^9.3.2",
     "ts-loader": "^6.2.1",
     "tslib": "2.3.1",
-    "typedoc": "0.21.2",
-    "typescript": "4.3.4"
+    "typedoc": "^0.22.13",
+    "typescript": "^4.6.2"
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --fix",
