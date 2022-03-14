@@ -22,4 +22,5 @@ export { default as checkElementIsVisibleInViewport } from "./checkElementIsVisi
 export { default as injectCSS } from "./injectCSS"
 export { default as recordAnimationFrames } from "./recordAnimationFrames"
 export { default as CSVToJSON } from "./csvToJSON"
+export { default as JSONToCSV } from "./jsonToCSV"
 export { default as easings } from "./easings"
