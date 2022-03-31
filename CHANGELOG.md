@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/SynZhang/koolkit/compare/v0.2.0...v0.3.0) (2022-03-31)
+
+### Features
+
+- create checkElementIsVisibleInViewport ([2ba9ac9](https://github.com/SynZhang/koolkit/commit/2ba9ac92069ae739153f4f6d47e615254ead23b6))
+- create copyToClipboard ([aa2a5d0](https://github.com/SynZhang/koolkit/commit/aa2a5d095c0efc8a9f07f74d6140ef001348168b))
+- create CSVToJSON ([66af92d](https://github.com/SynZhang/koolkit/commit/66af92de8cbdb8194f3bc54b90856ffa850283d6))
+- create injectCSS ([134b350](https://github.com/SynZhang/koolkit/commit/134b350801d21df4f7fcc16b1c196afba5a12336))
+- create JSONToCSV ([ded429c](https://github.com/SynZhang/koolkit/commit/ded429c1739d9f258efcbba7c076b7232044d517))
+- create mostPerformant ([95b33ac](https://github.com/SynZhang/koolkit/commit/95b33ac91631150f627bfc8c3143b4efa7574003))
+- create pipeAsyncFunctions ([b0aa2fe](https://github.com/SynZhang/koolkit/commit/b0aa2fe87ecfcddd1be97539d9a20f06e108b0ac))
+- create rearg ([285d4d2](https://github.com/SynZhang/koolkit/commit/285d4d2785194f206cf3dffa6e5e6e655184615a))
+- create recordAnimationFrames ([6204bb3](https://github.com/SynZhang/koolkit/commit/6204bb39ab876bd3ec8495eac16149ebedd77fe2))
+- create when ([82d5902](https://github.com/SynZhang/koolkit/commit/82d5902da85b69bbf061b27fb70985f276fb02ec))
+
+### Bug Fixes
+
+- change test environment fot getTypeOf ([481f43d](https://github.com/SynZhang/koolkit/commit/481f43d0ad8253d70b693ab7aa96d6604674e5de))
+
 ## [0.2.0](https://github.com/SynZhang/koolkit/compare/v0.1.0...v0.2.0) (2022-03-09)
 
 ### Features
